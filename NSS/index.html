@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>NSS</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    </head>
+    <body>
+       <header id="header">
+        <div class="navbar">
+         <span class="logo"><img id="img1" src="img/iitr_logo.jpg"></span>
+         <span class="name">NSS IIT Roorkee</span>
+          <a href="#Contact">Contact</a>
+          <a href="#Team">Team</a>
+          <a href="#figure">Cells</a>
+          <a href="#Purpose">Purpose</a>
+          <a href="#About">About</a>
+          <a href="#Home">Home</a>
+        </div>
+        </header>      
+        <section id="Home">
+            <div id="container1">
+              <div id="ct11"><img id="img2" src="img/nss_iitr.png"></div>
+              <div id="ct12">NSS IIT Roorkee</div>
+              <div id="ct13">''Not for me but for the Nation'</div>
+              <div id="ct14">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5fDpUE2698D4VSfauUBWFdWGDYgXCo4wAIUy_tBn9LJk2Rg/viewform"><button class="button1"><span>Feedback Form</span></button></a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeatcbPW934CrqOwcz2ed0v1iRMZ8RgsOJppMm87qDE9zK5eA/viewform"><button class="button2"><span>Blood Donations</span></button></a>
+              </div>
+            </div>    
+        </section>
+        <section id="About">
+          <div id="container2">
+            <div id="ct21">About Us</div>
+            <div id="ct22"><img id="img3" src="img\svg\separator.svg"></div>
+            <div id="ct23">
+                Some of you may call us life saviors, for some we may be the only source of hope. But in reality,
+                we are just an organization of over 1000 active & dedicated members having a common goal-
+                “Striving for the betterment of our motherland by fully indulging ourselves in the service of mankind”.
+                NSS IIT Roorkee is the largest student-body group of IIT Roorkee that brings an entirely new dimension 
+                to this prestigious institute. We are an organization consisting of 10 well-coordinated cells through
+                which we keep on contributing to several domains of social service. Of the many things that make us
+                who we are, what drives us from within is what inspires us to work. Driven by a strong urge to help
+                the needy, supplemented with great support from the students and sponsors, we aim to continue creating
+                an impact on the lives of many thereby following our motto- “ NOT FOR ME, BUT FOR THE NATION ”.
+            </div>  
+          </div>
+        </section>
+        <section id="Purpose">
+          <div id="container3">
+            <div id="box">
+              <div id="head">
+                What We Do ??
+              </div>
+              <div id="text">
+                  We hope to make a change in our society on a national level by inculcating thoughts of social welfare
+                  among the people. We wish towards building a beautiful world and spreading the message of environmental
+                  preservation, peace and education among today's youth.<br/><br/>
+                  NSS IIT Roorkee works on a diverse range of social
+                  issues including blood donation, spreading awareness, environmental issues, spreading education at all
+                  levels, etc. We also collaborate with several NGOs in and around.<br/><br/>
+                  NSS IIT Roorkee primarily aims to work
+                  for the betterment of society and instill the spirit of social service among the young students. It
+                  organizes blood donation camps, AIDS awareness camps, informative lectures on human values, surveys,
+                  guest lectures on general topics, and other such events regularly at all levels. 
+              </div>
+            </div> 
+        </section>
+        <section id="Portfolio" onmouseover="mouseover()">
+          <div id="container4">
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <img src="img/nss_text.jpg" style="width:100%">
+              </div>
+              <div class="mySlides fade">
+                <img src="img/h2.jpg" style="width:100%">
+              </div>
+              <div class="mySlides fade">
+                <img src="img/h1.jpg" style="width:100%">
+              </div>
+              <div class="mySlides fade">
+                <img src="img/bd.jpg" style="width:100%">
+              </div>
+              <div class="mySlides fade">
+                <img src="img/h3.jpg" style="width:100%">
+              </div>
+            </div>
+            </div>
+          </div>
+          </br>
+          <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </section>
+        <script>
+          var slideIndex = 0;
+          showSlides();
+           function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2500);
+          }
+        </script>
+
+        <section id="figure">
+          <div id="cellhead">Our Cells</div>
+          <img id="decagon" src="img/decagon.png">
+          <div class="circle" id="circle1" onclick="mouseClick1()">
+            <div id="cell">SWACCH <br>BHARAT<br> ABHIYAAN</div>
+          </div>
+          <div class="circle" id="circle2" onclick="mouseClick2()">
+            <div id="cell">NGO & <br>RELATIONS<br> CELL</div>
+          </div>
+          <div class="circle" id="circle3" onclick="mouseClick3()">
+            <div id="cell" style="top: 45%;">AWARENESS</div>
+          </div>
+          <div class="circle" id="circle4" onclick="mouseClick4()">
+            <div id="cell" style="top: 40%;">ALLIED <br> WORKS</div>
+          </div>
+          <div class="circle" id="circle5" onclick="mouseClick5()">
+            <div id="cell" style="top: 40%;">PRAGATI <br>CELL</div>
+          </div>
+          <div class="circle" id="circle6" onclick="mouseClick6()">
+            <div id="cell">EVENT <br>MANAGEMENT AND PROMOTION</div>
+          </div>
+          <div class="circle" id="circle7" onclick="mouseClick7()">
+            <div id="cell" style="top: 40%;">EXAM <br> EDUCATION</div>
+          </div>
+          <div class="circle" id="circle8" onclick="mouseClick8()">
+            <div id="cell">PRIMARY<br> EDUCATION <br>CELL</div>
+          </div>
+          <div class="circle" id="circle9" onclick="mouseClick9()">
+            <div id="cell">WOMEN EMPOWERMENT <br>CELL</div>
+          </div>
+          <div class="circle" id="circle10" onclick="mouseClick10()">
+            <div id="cell" style="top: 31%;">RURAL TRANSFORMATION THROUGH <br>EDUCATION</div>
+          </div>
+          <div id="content" >The range of services provided by the students varies greatly. Of the plethora of activities, we
+            undertake a few major that include teaching of school students, who cannot afford a good education, both inside and
+            outside the campus, spreading social awareness through lectures, debates and organizing blood donation
+            and first-aid camps. Our work also includes setting up of small-scale industries for the uplift of nearby
+            rural areas. To organise such multifarious activities, NSS has been divided into a number of cells.<br><br>
+            <div style="font-size: 4vh;"><b>Click on each cell name to read more about it</b></div>
+          </div>
+        </section>
+        <script>
+          function mouseClick1() {
+            document.getElementById("content").innerHTML = "Carrying forward the ideology of “Swachata Hi Seva” with utmost zeal and vitality, the SBA cell of NSS, IITR aims at spreading the message of private and public cleanliness and hygiene amongst all. The initiatives taken under this cell include setting up bio-toilets and biogas plants, various cleanliness drives and awareness programs to highlight the concept of “Swachhta”. Along with this, the SBA cell has also organized clothes, books, and other useful materials collection and distribution drives. Filled with enthusiastic volunteers this cell is one of the biggest cells of NSS IITR.";
+          }
+          function mouseClick2() {
+            document.getElementById("content").innerHTML = "The NGO & Relations Cell strives to establish an efficient and healthy connection between NSS IITR and various NGOs working in the same direction and towards the same cause. The NGO & Relations Cell also aims at maintaining a strong relationship with the various sponsors that collaborate with NSS IITR thereby being beneficial to both. Working of this cell relies mainly on the coherent interaction with multiple groups (NGOs, Sponsors etc.). This is achieved by organizing various events involving the groups which act as a connecting link. Through these events, members of NSS IITR get exposure to diverse methods and backgrounds which help in the improvement of NSS. Also, direct contact and working with the aforementioned NGOs help in building practical knowledge of the NSS members.";
+          }
+          function mouseClick3() {
+            document.getElementById("content").innerHTML = "<div style='font-size:3.4vh'>Awareness is not about explaining people the different policies or facilities for their help but it is also about making them aware about the different prevalent problems in our society and ways to overcome them. It also helps in guiding them and making them self-sufficient so that they can make their own decisions. The same work is done by the awareness cell of NSS IIT Roorkee. It actively participates to spread knowledge about topics such as NREGA, ration cards and public distribution system, right to vote, women empowerment, tuberculosis, cholera, polio, etc, in villages. It brings into notice about the various problems the society faces and also tries to change the general perspective on issues like global warming, hazardous effects of polythene, alcohol, the increasing generation gap, poor usage of voting rights, blood donation and so on through stage plays, skits, road plays, cultural performances, dance, singing, acting, etc. the group is also involved in making video for NSS IIT Roorkee.</div>";
+          }
+          function mouseClick4() {
+            document.getElementById("content").innerHTML = "The Allied Works of NSS IIT Roorkee is a crucial part of the organization. This collaboration primarily came in effect to manage the Public Relations of the group. Allied Works consists mainly of 4 distinct units which are Editorial, Web Development, Photography and Design, each of which work together to spread information to the public about the initiatives taken up by NSS. The aim of Editorial cell is content writing while Design cell carries out the task of creating new and innovative logos for different events and initiatives. The Web Development cell primarily manages the website of NSS IIT Roorkee and the Photography cell gathers pictures of events carried out by NSS which are later used while posting on social media.";
+          }
+          function mouseClick5() {
+            document.getElementById("content").innerHTML = "Social service and charity took birth for elimination of social disparity and with the vision of providing equal opportunities to every section of the society. Prospering in this traditional direction, NSS IITR Pragati Cell has made timely and successful attempts in studying rural regions with the aim of eliminating unawareness among the people. Pragati Cell plays a pivotal role in bringing about positive transformation in the villages in and around the city. Their work varies from spreading awareness about beneficial governmental policies and social issues, surveying the rural population and analyzing the data to explore prospects of development, distribution of basic needs among the needy and unfortunate, etc. It devotes itself to the welfare of the rural population to achieve its vision of seeing every individual on equal footing. Pragati Cell works in collaboration with the RTE Cell, SBA Cell, and others to fulfill their motive of building a better India by providing better amenities. Pragati Cell has brought glory to NSS IITR in multiple ways and has a major role in enhancement of the volume and quality of work which NSS IITR presently does.";
+          }
+          function mouseClick6() {
+            document.getElementById("content").innerHTML = "The EMP cell acts as the cardinal cell of the NSS as all the major activities executed by the organization come under its functioning. Major events like blood donation camps and NSS guest talks are spruced up by the NSS volunteers in a graceful manner. The road map to the amiable working of the event is paved by the promotions done in advance to the event day. For promotion, bulletins and posters are put up all around the campus and also on some off-campus locations. The events like welfare sessions and workshops play a crucial role in influencing the life of audience remarkably and hence EMP cell is an elemental component of the NSS.";
+          }
+          function mouseClick7() {
+            document.getElementById("content").innerHTML = "The exam education cell of IIT Roorkee supports the underprivileged children who have the potential but not the means to lead a good life by helping them secure a spot in esteemed institutions like IITs where they get ample opportunities to grow and shine. Volunteers provide free JEE coaching to these aspirants and results have been amazing so far. One of preparatory students got selected for IIT Bombay Civil Engineering last year. A lot of human resources that would have otherwise wasted away is shown in the right direction and turned into great assets for the nation. Exam education cell continues to make great strides helping many students realize their dreams.";
+          }
+          function mouseClick8() {
+            document.getElementById("content").innerHTML = "The Primary Education cell works with the prime aim to inculcate a habit of studying in kids. Its work ranges from calling upon students and counselling their parents, to teaching in every vertical with new technology oriented classes and literature as well. It is one of the most lively cells in NSS IIT roorkee. It puts an emphasis on quality education along with extra curricular activities which a student needs to succeed in their examinations with flying colours. The vision of primary education cell is to provide education to kids who are debarred from substantial teachings.";
+          }
+          function mouseClick9() {
+            document.getElementById("content").innerHTML = "The women empowerment cell focuses on one of the central issues prevalent in our society today. While society grows and develops, women seem to be left behind. The Women Empowerment cell of NSS undertakes activities to make sure that women contribute to the growth and development of society around them. No community, business or organization is complete without women. Every woman has so much to contribute. NSS IIT Roorkee works to bring women to the forefront by organizing activities like self-defense workshops, and health camps. NSS also contributes to the improvement of menstrual sanitation by helping in the manufacturing, supply, and disposal of sanitary pads. The cell was started last year and has so far worked with the women from nearby villages to generate employment by connecting them to team Thomso and an NGO for regular work. The cell also plays a significant role in the functioning of ASMITA where volunteers teach students every day.";
+          }
+          function mouseClick10() {
+            document.getElementById("content").innerHTML = "<div style='font-size:3vh'>National Service Scheme (NSS) IIT Roorkee has a long history of several amazing achievements. Through proper coordination amongst the 10 existing cells, NSS has been helping change the lives of many. The RTE cell plays a pivotal role in providing education to the needy and deserving students residing in rural areas. The RTE Cell, also popularly known as RTE Disha conducts regular classes for the students at the institute’s C-class club. These classes which are conducted for an hour from 6-7 pm each day (except on Sunday) receive an overwhelming response. The regular visits by the cell members to the nearby villages of Khanjarpur and Bhangeri to educate and create awareness amongst the parents can be considered as the primary reason behind the kind of response that this cell has been receiving over the past few years. Although the main aim of the cell is to spread education in the rural areas, it also focuses on executing special projects in collaboration with several NGOs for the all-round development of the students by helping them participate in several extra-curricular activities and also by focusing on the soft skills of the students. Along with all these necessary aspects, RTE also prepares students for the DTSE (Disha Talent Search Exam) which is a crucial step for them related to their higher studies.</div>";
+          }
+          function mouseover() {
+            document.getElementById("content").innerHTML = "The range of services provided by the students varies greatly. Of the plethora of activities, we undertake a few major that include teaching of school students, who cannot afford a good education, both inside and outside the campus, spreading social awareness through lectures, debates and organizing blood donation and first-aid camps. Our work also includes setting up of small-scale industries for the uplift of nearby rural areas. To organise such multifarious activities, NSS has been divided into a number of cells.<br><br><div style='font-size: 4vh;'><b>Click on each cell name to read more about it</b></div>";
+          }
+        </script>
+        <section id="Team" onmouseover="mouseover()">
+          <div id="container5">
+            <div id="ct51"> OUR TEAM </div>
+            <div id="ct52">
+              <div id="m1">
+                <div id="pic"><div class="circlen"><img id="img4" src="img/mem1.jpg"></div></div>
+                <div id="info">
+                  <div id="post">
+                    <div style="font-size: 24px;"><b>Pranita Sarangi</b></div>
+                    <div>Faculty Coordinator</div>
+                  </div>
+                  <div id="e-mail"><a style="text-decoration: none;" href="mailto:psarafbt@iitr.ac.in" target="_top">psarafbt@iitr.ac.in</a></div>
+                </div>
+              </div>
+              <div id="m2">
+                <div id="pic"><div class="circlen"><img id="img4" src="img/mem2.jpg"></div></div>
+                <div id="info">
+                  <div id="post">
+                    <div style="font-size: 24px;"><b>Singh Rahulkumar Sunil</b></div>
+                    <div>General Secretary</div>
+                  </div>
+                  <div id="e-mail"><a style="text-decoration: none;" href="mailto:pssunil@mt.iitr.ac.in" target="_top">ssunil@mt.iitr.ac.in</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="Contact">
+          <div id="container6">
+            <div id="ct6box1">
+              <div id="ct6b11"> <pre>MEET US</pre> </div>
+              <div id="ct6b12">
+                NSS Office,<br> 2nd Floor, Multi Activity Centre, <br>IIT Roorkee <br><br>
+                Phone number : +91 8006479358 <br>
+                Email : nss@iitr.ac.in <br><br>
+                Timings: 5:30 pm to 7:30 pm 
+              </div>
+            </div>
+            <div id="ct6box2">
+              <div id="ct6b21"><pre> OUR OFFICE </pre></div>
+              <div id="ct6b22">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6919.567514010587!2d77.892144614734!3d29.870509567786442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390eb364876ca12d%3A0x23a45c97a582c98c!2sNSS%20Office!5e0!3m2!1sen!2sin!4v1576918452456!5m2!1sen!2sin" width="100%" height="517px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <div id="footer">
+            <div class="wrapper">
+              <a href="https://www.facebook.com/nssiitr"><i class="fa fa-3x fa-facebook-square"></i></a>
+              <a href="https://www.instagram.com/nssiitr/"><i class="fa fa-3x fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/nssiitr"><i class="fa fa-3x fa-linkedin-square"></i></a>
+              <a href="https://www.youtube.com/channel/UCOwle_PBTdDRQC4HCJijBKA"><i class="fa fa-3x fa-youtube-square"></i></a>
+             </div>
+             <div id="end"> © 2019 - Ankit Biswas All Right Reserved </div>
+          </div>  
+        </footer>      
+    </body>
+</html>
